@@ -6,11 +6,11 @@ import CartIcon from "../Cart/CartIcon";
 
 import styles from "./HeaderCartButton.module.css";
 
-interface PropsData {
+interface HeaderCartButtonProps {
   onClick: () => void;
 }
 
-const HeaderCartButton: React.FC<PropsData> = (props) => {
+const HeaderCartButton: React.FC<HeaderCartButtonProps> = (props) => {
   const cartCtx = useContext(CartContext);
 
   const numberOfCartItems: number = cartCtx!.items.reduce(

@@ -7,7 +7,7 @@ interface BackdropProps {
 }
 
 interface ModalOverlayProps {
-  children: JSX.Element | JSX.Element[];
+  children: any;
 }
 
 interface ModalProps extends ModalOverlayProps, BackdropProps {}

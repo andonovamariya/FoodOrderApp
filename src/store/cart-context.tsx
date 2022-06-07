@@ -6,6 +6,7 @@ interface CartContextInterface {
   totalAmount: number;
   addItem: (item: Item) => void;
   removeItem: (id: string) => void;
+  clearCart: () => void;
 }
 
 const CartContext = React.createContext<CartContextInterface | null>({
@@ -13,6 +14,7 @@ const CartContext = React.createContext<CartContextInterface | null>({
   totalAmount: 0,
   addItem: (item) => {},
   removeItem: (id) => {},
+  clearCart: () => {},
 });
 
 export default CartContext;
